@@ -4,13 +4,14 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Login/Register";
 import Home from "../componnents/Home/Home";
 import LottieAnimation from "../Pages/Shared/LottieAnimation";
+import ErrorPage from "../Pages/Shared/ErrorPage";
 
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Main></Main>,
-        errorElement: <h1>error rrrrrrrrr</h1>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/home',
