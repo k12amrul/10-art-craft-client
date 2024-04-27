@@ -6,6 +6,7 @@ import Home from "../componnents/Home/Home";
 import LottieAnimation from "../Pages/Shared/LottieAnimation";
 import ErrorPage from "../Pages/Shared/ErrorPage";
 import AddProduct from "../componnents/AddProduct";
+import AllArtAndCraft from "../componnents/AllArtAndCraft";
 
 
 const router = createBrowserRouter([
@@ -27,9 +28,14 @@ const router = createBrowserRouter([
                 path: '/login',
                 element: <Login></Login>
             },
+            // {
+            //     path: '/allPrinting',
+            //     element: <h1> allPrinting</h1>
+            // },
             {
-                path: '/allPrinting',
-                element: <h1> allPrinting</h1>
+                path: '/allArtCraft',
+                loader: ()=> fetch('http://localhost:5000/arts'),
+                element: <AllArtAndCraft></AllArtAndCraft>
             },
             {
                 path: '/addCraftItem',
@@ -44,10 +50,7 @@ const router = createBrowserRouter([
                 // path: '/l',
                 // element: <LottieAnimation></LottieAnimation>
             },
-            {
-                path: '/allArtCraft',
-                element: <h1>allArtCraft</h1>
-            },
+           
            
             {
                 path: '/register',

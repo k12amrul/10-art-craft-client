@@ -13,8 +13,8 @@
         "customization": "yes",
         "processing_time": "7-10 business days",
         "stockStatus": "Made to Order",
-        "user_email": "s",
-        "user_name": "s"
+        "user_email": "kamrul96k@gmail.com",
+        "user_name": "kamrul"
         },
         {
         "image": "https://fineartamerica.com/art/paintings/forest+landscape",
@@ -26,8 +26,8 @@
         "customization": "yes",
         "processing_time": "5-7 business days",
         "stockStatus": "Made to Order",
-        "user_email": "",
-        "user_name": ""
+        "user_email": "kamrul96k@gmail.com",
+        "user_name": "kamrul"
         },
         {
         "image": "https://nl.pinterest.com/eduardmoes/portrait-pencil-drawings/",
@@ -39,8 +39,8 @@
         "customization": "yes",
         "processing_time": "3-5 business days",
         "stockStatus": "Made to Order",
-        "user_email": "",
-        "user_name": ""
+        "user_email": "kamrul96k@gmail.com",
+        "user_name": "kamrul"
         },
         {
         "image": "https://www.pinterest.com/pin/ink-portrait--174725660532838244/",
@@ -52,8 +52,8 @@
         "customization": "yes",
         "processing_time": "3-5 business days",
         "stockStatus": "Made to Order",
-        "user_email": "",
-        "user_name": ""
+        "user_email": "kamrul96k@gmail.com",
+        "user_name": "kamrul"
         },
         {
         "image": "https://www.pinterest.com/artbytisha/art-watercolor-flowers/",
@@ -65,8 +65,8 @@
         "customization": "yes",
         "processing_time": "5-7 business days",
         "stockStatus": "Made to Order",
-        "user_email": "",
-        "user_name": ""
+        "user_email": "kamrul96k@gmail.com",
+        "user_name": "kamrul"
         },
         {
         "image": "https://www.pinterest.com/txsheree/watercolor-animals/",
@@ -76,8 +76,10 @@
         "price": 1250,
         "rating": 4.8,
         "customization": "yes",
-        "processing_time": "7-10"
-        
+        "processing_time": "7-10",
+        "stockStatus": "Made to Order",
+        "user_email": "kamrul96k@gmail.com",
+        "user_name": "kamrul"
         
         
         }

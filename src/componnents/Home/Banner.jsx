@@ -19,7 +19,7 @@ const Banner = () => {
 <SwiperSlide data-aos="fade-up"
 // data-aos-offset="200"
 // data-aos-delay="50"
-><img src="https://media.istockphoto.com/id/1357529933/photo/digitally-generated-image-of-a-fully-furnished-living-room.jpg?s=1024x1024&w=is&k=20&c=9ETDHQCFLjuC6GHtlreqIvlCV-468YcLQ2Z8TkUsYlM=" alt="" /> </SwiperSlide>
+><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOZHV58vYyd5gf1JIvLRcTKgUH5bFoUpTHwufGupd8xw&s" alt="" /> </SwiperSlide>
 <SwiperSlide
 //  data-aos="fade-up"
 // data-aos-offset="200"
