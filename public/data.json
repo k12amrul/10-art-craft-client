@@ -1,0 +1,85 @@
+[
+    
+    {
+    
+  
+  
+        "image": "https://www.pinterest.com/rivkahbenjamin/landscape-paintings/",
+        "item_name": "Landscape Painting: Mountain View",
+        "subcategory_Name": "Painting",
+        "short_description": "Capture the serenity of majestic mountains on canvas. Perfect for nature lovers.",
+        "price": 1500,
+        "rating": 4.8,
+        "customization": "yes",
+        "processing_time": "7-10 business days",
+        "stockStatus": "Made to Order",
+        "user_email": "s",
+        "user_name": "s"
+        },
+        {
+        "image": "https://fineartamerica.com/art/paintings/forest+landscape",
+        "item_name": "Landscape Painting: Forest",
+        "subcategory_Name": "Painting",
+        "short_description": "Explore the beauty of a lush forest scene. Choose your preferred level of detail.",
+        "price": 1200,
+        "rating": 4.5,
+        "customization": "yes",
+        "processing_time": "5-7 business days",
+        "stockStatus": "Made to Order",
+        "user_email": "",
+        "user_name": ""
+        },
+        {
+        "image": "https://nl.pinterest.com/eduardmoes/portrait-pencil-drawings/",
+        "item_name": "Portrait Drawing: Pencil Sketch",
+        "subcategory_Name": "Drawing",
+        "short_description": "A timeless classic. Capture a loved one's features in a detailed pencil sketch.",
+        "price": 800,
+        "rating": 4.9,
+        "customization": "yes",
+        "processing_time": "3-5 business days",
+        "stockStatus": "Made to Order",
+        "user_email": "",
+        "user_name": ""
+        },
+        {
+        "image": "https://www.pinterest.com/pin/ink-portrait--174725660532838244/",
+        "item_name": "Portrait Drawing: Ink Outline",
+        "short_description": "Bold and elegant. Create a striking portrait with a unique ink outline style.",
+        "subcategory_Name": "Drawing",
+        "price": 650,
+        "rating": 4.7,
+        "customization": "yes",
+        "processing_time": "3-5 business days",
+        "stockStatus": "Made to Order",
+        "user_email": "",
+        "user_name": ""
+        },
+        {
+        "image": "https://www.pinterest.com/artbytisha/art-watercolor-flowers/",
+        "item_name": "Watercolour Painting: Floral",
+        "subcategory_Name": "Painting",
+        "short_description": "Bring the beauty of flowers to life with a vibrant watercolor painting.",
+        "price": 1000,
+        "rating": 4.6,
+        "customization": "yes",
+        "processing_time": "5-7 business days",
+        "stockStatus": "Made to Order",
+        "user_email": "",
+        "user_name": ""
+        },
+        {
+        "image": "https://www.pinterest.com/txsheree/watercolor-animals/",
+        "item_name": "Watercolour Painting: Animal Portrait",
+        "subcategory_Name": "Painting",
+        "short_description": "Immortalize your furry friend or favorite animal in a stunning watercolor portrait.",
+        "price": 1250,
+        "rating": 4.8,
+        "customization": "yes",
+        "processing_time": "7-10"
+        
+        
+        
+        }
+        
+]
