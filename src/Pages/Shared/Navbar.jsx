@@ -22,7 +22,7 @@ const Navbar = () => {
     const navLinks = <>
         <li><NavLink to='/home' >Home</NavLink> </li>
         <li><NavLink to='/allPrinting' > All-Printing</NavLink> </li>
-        <li><NavLink to='/addPrinting' > Add-Printing</NavLink> </li>
+        <li><NavLink to='/addCraftItem' > Add-Craft-Item</NavLink> </li>
        {
         user &&
         <li><NavLink to='/myArtCraft' > My-Art-Craft</NavLink> </li>

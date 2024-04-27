@@ -5,6 +5,7 @@ import Register from "../Pages/Login/Register";
 import Home from "../componnents/Home/Home";
 import LottieAnimation from "../Pages/Shared/LottieAnimation";
 import ErrorPage from "../Pages/Shared/ErrorPage";
+import AddProduct from "../componnents/AddProduct";
 
 
 const router = createBrowserRouter([
@@ -15,7 +16,8 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/home',
-                element: <Home></Home>
+                loader: ()=> fetch('http://localhost:5000/arts'),
+                element: <Home></Home>,
             },
             {
                 path: '/register',
@@ -30,8 +32,10 @@ const router = createBrowserRouter([
                 element: <h1> allPrinting</h1>
             },
             {
-                path: '/addPrinting',
-                element: <h1>addPrinting</h1>
+                path: '/addCraftItem',
+                element: <AddProduct></AddProduct>
+                
+                // <h1> AddCraft Item Page:</h1>
             },
             {
                 path: '/myArtCraft',
