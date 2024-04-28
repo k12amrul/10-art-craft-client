@@ -8,6 +8,8 @@ import ErrorPage from "../Pages/Shared/ErrorPage";
 import AddProduct from "../componnents/AddProduct";
 import AllArtAndCraft from "../componnents/AllArtAndCraft";
 import PrivateRoute from "./PrivateRoute";
+import CardDetails from "../componnents/CardDetails";
+import MyArtCraft from "../componnents/MyArtCraft";
 
 
 const router = createBrowserRouter([
@@ -29,10 +31,11 @@ const router = createBrowserRouter([
                 path: '/login',
                 element: <Login></Login>
             },
-            // {
-            //     path: '/allPrinting',
-            //     element: <h1> allPrinting</h1>
-            // },
+            {
+                path: '/artDetails/:id',
+                loader: ()=> fetch('http://localhost:5000/arts'),
+                element: <CardDetails></CardDetails>
+            },
             {
                 path: '/allArtCraft',
                  loader: ()=> fetch('http://localhost:5000/arts'),
@@ -49,8 +52,9 @@ const router = createBrowserRouter([
             },
             {
                 path: '/myArtCraft',
-                element : 
-                <h1>myArtCraft</h1>
+                // loader: ()=> fetch('http://localhost:5000/arts'),
+                element :  <MyArtCraft></MyArtCraft>
+            
                 // path: '/l',
                 // element: <LottieAnimation></LottieAnimation>
             },

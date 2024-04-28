@@ -26,11 +26,13 @@ const AddProduct = () => {
         const processing_time = form.processing_time.value
         const stockStatus = form.stockStatus.value
         const discount = form.discount.value
+        const userEmail = form.userEmail.value
+        const userName = form.userName.value
         // const  = form..value
 
 
 
-        const data = { subcategory_Name, item_name, customization, description, imageURL, price, rating, processing_time, stockStatus, discount }
+        const data = { userEmail, userName, subcategory_Name, item_name, customization, description, imageURL, price, rating, processing_time, stockStatus, discount }
 
         console.log(data)
 
