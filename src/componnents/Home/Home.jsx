@@ -9,11 +9,16 @@ const Home = () => {
 
     return (
         <div>
-            <Banner></Banner>
+            <Banner  className=' mt-10 ' ></Banner>
+            <div className=' max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3'>
+
             {
-                data.map( d => <Card></Card> )
+                data.map( d => <Card  data={data} 
+                    
+                    ></Card> )
             }
             
+            </div>
         </div>
     );
 };

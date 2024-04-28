@@ -19,17 +19,20 @@ const Banner = () => {
 <SwiperSlide data-aos="fade-up"
 // data-aos-offset="200"
 // data-aos-delay="50"
-><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOZHV58vYyd5gf1JIvLRcTKgUH5bFoUpTHwufGupd8xw&s" alt="" /> </SwiperSlide>
+>
+    <img src="https://img.freepik.com/free-photo/top-view-colorful-aquarelle-notebook_23-2148419540.jpg?size=626&ext=jpg&ga=GA1.1.775762846.1704797882&semt=ais" alt="" /> </SwiperSlide>
+
 <SwiperSlide
 //  data-aos="fade-up"
 // data-aos-offset="200"
 // data-aos-delay="50"
-> <img src="https://media.istockphoto.com/id/1440269204/photo/interior-design-of-a-beautiful-kitchen-with-a-large-island-in-a-modern-new-england-colonial.jpg?s=1024x1024&w=is&k=20&c=rBBs8CtSFMMhibSIPQTo010QIQ6JNzps7QiH7b-lY0s=" alt="" /></SwiperSlide>
+>
+     <img src="https://img.freepik.com/free-vector/paint-brushes-color-palette_1308-126704.jpg?size=626&ext=jpg&ga=GA1.1.775762846.1704797882&semt=ais" alt="" /></SwiperSlide>
 <SwiperSlide
 //  data-aos="fade-up"
 // data-aos-offset="200"
 // data-aos-delay="50"
-><img src="https://media.istockphoto.com/id/1481823491/photo/teenage-girls-room.jpg?s=1024x1024&w=is&k=20&c=-FOkSNDOW5phgiTsv6bduZ-LsrpwhWwZO2kpVGxjJy4=" alt="" /> </SwiperSlide>
+><img src="https://i.ytimg.com/vi/j1WvoYl67QE/maxresdefault.jpg" alt="" /> </SwiperSlide>
 
 
 {/* 

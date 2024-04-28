@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Swal from 'sweetalert2'
+import { AuthContext } from '../cotexts/AuthProvider';
 
 
 const AddProduct = () => {
+
+
+    const { user } = useContext(AuthContext)
+
+    console.log(user.email)
+
+
 
     const handleAddProduct = (e) => {
         e.preventDefault()
@@ -12,18 +20,18 @@ const AddProduct = () => {
         const item_name = form.item_name.value
         const customization = form.customization.value
         const description = form.description.value
-        const  imageURL= form.imageURL.value
+        const imageURL = form.imageURL.value
         const price = form.price.value
         const rating = form.rating.value
         const processing_time = form.processing_time.value
         const stockStatus = form.stockStatus.value
-        const  discount= form.discount.value
+        const discount = form.discount.value
         // const  = form..value
 
 
 
-        const data = { subcategory_Name, item_name, customization,description,imageURL,price,rating ,processing_time,stockStatus,discount}
-        
+        const data = { subcategory_Name, item_name, customization, description, imageURL, price, rating, processing_time, stockStatus, discount }
+
         console.log(data)
 
         // fetch('http://localhost:5000/addCraftItem',{
@@ -69,9 +77,9 @@ const AddProduct = () => {
             )
 
 
-        
 
-        
+
+
 
     }
 
@@ -162,7 +170,8 @@ const AddProduct = () => {
                         <label className="label">
                             <span className="label-text"> User Name</span>
                         </label>
-                        <input name='userName' type="text" placeholder="User Name" className="input input-bordered input-secondary w-full  " />
+                        <input name='userName' defaultValue={user.displayName }
+                            type="text" placeholder="User Name" className="input input-bordered input-secondary w-full  " />
                         <br />
                     </div>
 
@@ -170,14 +179,14 @@ const AddProduct = () => {
                         <label className="label">
                             <span className="label-text"> User Email</span>
                         </label>
-                        <input name='userEmail' type="text" placeholder="User Name" className="input input-bordered input-secondary w-full  " />
+                        <input name='userEmail' defaultValue={user?.email} type="text" placeholder="User Name" className="input input-bordered input-secondary w-full  " />
                         <br />
                     </div>
 
                 </div>
                 <div className='flex justify-center  items-center  '>
 
-                <input className='btn btn-block max-w-96 ' type="submit" name="" id="" />
+                    <input className='btn btn-block max-w-96 ' type="submit" name="" id="" />
                 </div>
 
 

@@ -7,6 +7,7 @@ import LottieAnimation from "../Pages/Shared/LottieAnimation";
 import ErrorPage from "../Pages/Shared/ErrorPage";
 import AddProduct from "../componnents/AddProduct";
 import AllArtAndCraft from "../componnents/AllArtAndCraft";
+import PrivateRoute from "./PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -34,12 +35,15 @@ const router = createBrowserRouter([
             // },
             {
                 path: '/allArtCraft',
-                loader: ()=> fetch('http://localhost:5000/arts'),
+                 loader: ()=> fetch('http://localhost:5000/arts'),
                 element: <AllArtAndCraft></AllArtAndCraft>
             },
             {
                 path: '/addCraftItem',
-                element: <AddProduct></AddProduct>
+                element: <PrivateRoute> 
+                    <AddProduct></AddProduct>
+
+                </PrivateRoute> 
                 
                 // <h1> AddCraft Item Page:</h1>
             },
