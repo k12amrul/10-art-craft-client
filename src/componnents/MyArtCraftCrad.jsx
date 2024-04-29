@@ -3,49 +3,62 @@ import React, { useState } from 'react';
 import { BsArrowRight } from 'react-icons/bs';
 import { FcRating } from 'react-icons/fc';
 import { Link, NavLink } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
-const MyArtCraftCrad = ({ data }) => {
+const MyArtCraftCrad = ({ data, myArts, setmyArts }) => {
 
-  const [ arts ,setArts] = useState(data)
+  // const [ arts ,setArts] = useState(myArts)
   const { image, _id, userEmail, userName, subcategory_Name, item_name, customization, description, imageURL, price, rating, processing_time, stockStatus, discount } = data
 
 
-// console.log(data ,'12' )
-console.log(data ,'12' ,_id )
 
-  const handleDelate = (id) => {
-
-    console.log(id)
-    
-
-    fetch(`http://localhost:5000/arts/${id}`, {
-      method: "DELETE",
+  console.log(myArts, "15")
 
 
-    })
-      .then(res => res.json())
-      .then(d => {
-        console.log(d ,"28")
+  const handleDelete = (id) => {
 
-        // if (data.deletedCount > 0) {
-        //   alert('delete successfully')
-        //   const remaining = arts.filter( art => art._id   !== id)
-        //  setArts( remaining)
+    // console.log(id)
 
-        // //  console.log( remaining)
-          
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!"
+    }).then((result) => {
+      if (result.isConfirmed) {
 
-        // }
+        fetch(`http://localhost:5000/arts/${id}`, {
+          method: 'DELETE',
+          // headers: 
+
+        })
+          .then(res => res.json())
+          .then(data => {
+            console.log(data)
+            if (data.deletedCount > 0) {
+              Swal.fire({
+                title: "Deleted!",
+                text: "Your file has been deleted.",
+                icon: "success"
+              })
+              alert('detete ssss')
+              const remaningArts = myArts.filter(art => art._id !== _id)
+              setmyArts(remaningArts)
+
+            }
+          })
+
 
 
       }
-
-
-      )
+    });
 
 
   }
-
+  //------------------------
   const handleUpdate = (id) => {
     console.log(id)
   }
@@ -92,9 +105,9 @@ console.log(data ,'12' ,_id )
 
       </div>
       <div className=' flex justify-between mt-2 '>
-      {/* <Link to={`/update/${data._id}`}> <button className=' bg-green-500'  > update </button></Link> */}
+        {/* <Link to={`/update/${data._id}`}> <button className=' bg-green-500'  > update </button></Link> */}
         {/* <button onClick={() => handleUpdate(_id)} className='btn'> updtate </button> */}
-        <button onClick={() => handleDelate(data?._id)} className=' btn'> delate </button>
+        <button onClick={() => handleDelete(_id)} className=' btn'> delate </button>
 
 
       </div>

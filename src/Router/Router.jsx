@@ -13,6 +13,8 @@ import MyArtCraft from "../componnents/MyArtCraft";
 import UpdateArts from "../componnents/UpdateArts";
 
 
+
+
 const router = createBrowserRouter([
     {
         path: '/',
@@ -54,9 +56,10 @@ const router = createBrowserRouter([
                 // <h1> AddCraft Item Page:</h1>
             },
             {
-                path: '/myArtCraft',
+                path: '/myArtCraft/:email',
                 // loader: ()=> fetch('http://localhost:5000/arts'),
                 // loader:  fetch(`http://localhost:5000/myArtCraft/${user?.email}`),
+                loader: ({params}) => fetch(`http://localhost:5000/myArtCraft/${params?.email}`),
                 element :  <MyArtCraft></MyArtCraft>
             
             },

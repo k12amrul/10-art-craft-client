@@ -23,10 +23,9 @@ const Navbar = () => {
         <li><NavLink to='/home' >Home</NavLink> </li>
         <li><NavLink to='/allArtCraft' > All-Art-Craft</NavLink> </li>
         <li><NavLink to='/addCraftItem' > Add-Craft-Item</NavLink> </li>
-        {/* <li><NavLink to='/allPrinting' > All-Printing</NavLink> </li> */}
+        
        
-       
-        <li><NavLink to='/myArtCraft' > My-Art-Craft-List </NavLink> </li>
+        <li><NavLink to= {`/myArtCraft/${user?.email}`} > My-Art-Craft-List </NavLink> </li>
        
         <li><NavLink to='/register' > Register</NavLink> </li>
         <li><NavLink to='/login' >Login</NavLink> </li>
@@ -39,7 +38,7 @@ const Navbar = () => {
         </>
 
        }
-        <li><NavLink to='/about' >About</NavLink> </li>
+        {/* <li><NavLink to='/about' >About</NavLink> </li> */}
 
     </>
     return (
