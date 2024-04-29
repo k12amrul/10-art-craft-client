@@ -26,13 +26,13 @@ const AddProduct = () => {
         const processing_time = form.processing_time.value
         const stockStatus = form.stockStatus.value
         const discount = form.discount.value
-        const userEmail = form.userEmail.value
-        const userName = form.userName.value
+        const user_email = form.user_email.value
+        const user_name = form.user_name.value
         // const  = form..value
 
 
 
-        const data = { userEmail, userName, subcategory_Name, item_name, customization, description, imageURL, price, rating, processing_time, stockStatus, discount }
+        const data = { user_email, user_name, subcategory_Name, item_name, customization, description, imageURL, price, rating, processing_time, stockStatus, discount }
 
         console.log(data)
 
@@ -172,7 +172,7 @@ const AddProduct = () => {
                         <label className="label">
                             <span className="label-text"> User Name</span>
                         </label>
-                        <input name='userName' defaultValue={user.displayName }
+                        <input name='user_name' defaultValue={user.displayName }
                             type="text" placeholder="User Name" className="input input-bordered input-secondary w-full  " />
                         <br />
                     </div>
@@ -181,7 +181,7 @@ const AddProduct = () => {
                         <label className="label">
                             <span className="label-text"> User Email</span>
                         </label>
-                        <input name='userEmail' defaultValue={user?.email} type="text" placeholder="User Name" className="input input-bordered input-secondary w-full  " />
+                        <input name='user_email' defaultValue={user?.email} type="text" placeholder="User Name" className="input input-bordered input-secondary w-full  " />
                         <br />
                     </div>
 

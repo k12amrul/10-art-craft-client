@@ -20,7 +20,9 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/home',
-                loader: ()=> fetch('http://localhost:5000/arts'),
+                loader: ()=> fetch('http://localhost:5000') ,
+                // loader: ()=> fetch(`process.env.REACT_APP_API_URL`) ,
+               
                 element: <Home></Home>,
             },
             {
