@@ -10,6 +10,7 @@ import AllArtAndCraft from "../componnents/AllArtAndCraft";
 import PrivateRoute from "./PrivateRoute";
 import CardDetails from "../componnents/CardDetails";
 import MyArtCraft from "../componnents/MyArtCraft";
+import UpdateArts from "../componnents/UpdateArts";
 
 
 const router = createBrowserRouter([
@@ -55,12 +56,16 @@ const router = createBrowserRouter([
             {
                 path: '/myArtCraft',
                 // loader: ()=> fetch('http://localhost:5000/arts'),
+                // loader:  fetch(`http://localhost:5000/myArtCraft/${user?.email}`),
                 element :  <MyArtCraft></MyArtCraft>
             
-                // path: '/l',
-                // element: <LottieAnimation></LottieAnimation>
             },
-           
+            
+            {
+                path: '/art/:id',
+                loader: ({params}) => fetch(`http://localhost:5000/arts/${params.id}`),
+                element : <UpdateArts> </UpdateArts>
+            },
            
             {
                 path: '/register',
