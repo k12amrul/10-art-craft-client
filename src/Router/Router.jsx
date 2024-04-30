@@ -23,7 +23,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/home',
-                loader: ()=> fetch('http://localhost:5000') ,
+                loader: ()=> fetch('https://a-11-server-eight.vercel.app') ,
                 // loader: ()=> fetch(`process.env.REACT_APP_API_URL`) ,
                
                 element: <Home></Home>,
@@ -38,7 +38,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/artDetails/:id',
-                loader: ()=> fetch('http://localhost:5000/arts'),
+                loader: ()=> fetch('https://a-11-server-eight.vercel.app/arts'),
                 element:  <PrivateRoute>
 
                     <CardDetails> </CardDetails>
@@ -46,7 +46,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/allArtCraft',
-                 loader: ()=> fetch('http://localhost:5000/arts'),
+                 loader: ()=> fetch('https://a-11-server-eight.vercel.app/arts'),
                 element: <AllArtAndCraft></AllArtAndCraft>
             },
             {
@@ -60,7 +60,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/myArtCraft/:email',
-                loader: ({params}) => fetch(`http://localhost:5000/myArtCraft/${params?.email}`),
+                loader: ({params}) => fetch(`https://a-11-server-eight.vercel.app/myArtCraft/${params?.email}`),
                 element : <PrivateRoute>
 
                     <MyArtCraft></MyArtCraft>
@@ -70,7 +70,7 @@ const router = createBrowserRouter([
             
             {
                 path: '/art/:id',
-                loader: ({params}) => fetch(`http://localhost:5000/arts/${params.id}`),
+                loader: ({params}) => fetch(`https://a-11-server-eight.vercel.app/arts/${params.id}`),
                 element : <UpdateArts> </UpdateArts>
             },
            

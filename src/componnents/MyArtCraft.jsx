@@ -20,8 +20,8 @@ console.log( data)
 
 
     // useEffect(() => {
-    //     // fetch(`http://localhost:5000/myArtCraft?email=${user?.email}`)
-    //     fetch(`http://localhost:5000/myArtCraft/${user?.email}`)
+    //     // fetch(`https://a-11-server-eight.vercel.app/myArtCraft?email=${user?.email}`)
+    //     fetch(`https://a-11-server-eight.vercel.app/myArtCraft/${user?.email}`)
     //         .then(res => res.json())
     //         .then(data => {
     //             // console.log(data)

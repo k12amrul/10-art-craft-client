@@ -31,7 +31,7 @@ const MyArtCraftCrad = ({ data, myArts, setmyArts }) => {
     }).then((result) => {
       if (result.isConfirmed) {
 
-        fetch(`http://localhost:5000/arts/${id}`, {
+        fetch(`https://a-11-server-eight.vercel.app/arts/${id}`, {
           method: 'DELETE',
           // headers: 
 

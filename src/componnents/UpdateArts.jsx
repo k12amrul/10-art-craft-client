@@ -38,7 +38,7 @@ const UpdateArts = () => {
 
 
 
-        fetch(`http://localhost:5000/art/${_id}`, {
+        fetch(`https://a-11-server-eight.vercel.app/art/${_id}`, {
             method: "PUT",
             headers: {
                 // "Content-Type": "application/json",
