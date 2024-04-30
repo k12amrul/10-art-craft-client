@@ -5,7 +5,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 const AllArtAndCraftCard = ({data ,index} ) => {
 
-    const   { _id,image, subcategory_Name, item_name, customization,description,imageURL,price,rating ,processing_time,stockStatus,discount} =data
+    const   { _id, subcategory_Name, item_name, customization,description,imageURL,price,rating ,processing_time,stockStatus,discount} =data
 
 console.log( index)
 

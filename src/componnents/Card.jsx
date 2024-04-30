@@ -16,7 +16,7 @@ const Card = ({data}) => {
     <div className='p-2 border'>
     <div className='p-2'  >
       
-      <img className='rounded-lg ' src={image} alt="" />
+      <img className='rounded-lg ' src={imageURL} alt="" />
     </div>
 
     <div className='p-2 border mt-2 rounded-sm'  >

@@ -27,11 +27,12 @@ const Navbar = () => {
        
         <li><NavLink to= {`/myArtCraft/${user?.email}`} > My-Art-Craft-List </NavLink> </li>
        
+
         <li><NavLink to='/register' > Register</NavLink> </li>
         <li><NavLink to='/login' >Login</NavLink> </li>
         {/* <li><NavLink to='/bookings' > Bookings</NavLink> </li> */}
        {
-        user && 
+        user  && 
         <>
         <li><NavLink to='/updateprofile' > Update Profile </NavLink> </li>
         <li><NavLink to='/profile' >   Profile </NavLink> </li>

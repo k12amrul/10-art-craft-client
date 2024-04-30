@@ -6,9 +6,10 @@ import { Link, NavLink } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 const MyArtCraftCrad = ({ data, myArts, setmyArts }) => {
+  console.log(data)
 
   // const [ arts ,setArts] = useState(myArts)
-  const { image, _id, userEmail, userName, subcategory_Name, item_name, customization, description, imageURL, price, rating, processing_time, stockStatus, discount } = data
+  const {  _id, userEmail, userName, subcategory_Name, item_name, customization, description, imageURL, price, rating, processing_time, stockStatus, discount } = data
 
 
 
@@ -44,7 +45,7 @@ const MyArtCraftCrad = ({ data, myArts, setmyArts }) => {
                 text: "Your file has been deleted.",
                 icon: "success"
               })
-              alert('detete ssss')
+             
               const remaningArts = myArts.filter(art => art._id !== _id)
               setmyArts(remaningArts)
 
@@ -69,7 +70,7 @@ const MyArtCraftCrad = ({ data, myArts, setmyArts }) => {
     <div className='p-2 border'>
       <div className='p-2'  >
         <h1>{data.length} </h1>
-        <img className='rounded-lg ' src={image} alt="" />
+        <img className='rounded-lg ' src={imageURL} alt="" />
       </div>
 
       <div className='p-2 border mt-2 rounded-sm'  >
@@ -105,7 +106,9 @@ const MyArtCraftCrad = ({ data, myArts, setmyArts }) => {
 
       </div>
       <div className=' flex justify-between mt-2 '>
-        {/* <Link to={`/update/${data._id}`}> <button className=' bg-green-500'  > update </button></Link> */}
+
+      
+        <Link to={`/art/${_id}`}> <button className=' bg-green-500'  > update </button></Link>
         {/* <button onClick={() => handleUpdate(_id)} className='btn'> updtate </button> */}
         <button onClick={() => handleDelete(_id)} className=' btn'> delate </button>
 

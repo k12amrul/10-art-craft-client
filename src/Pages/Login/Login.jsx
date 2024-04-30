@@ -114,10 +114,14 @@ const Login = () => {
               <label className="label">
                 <span className="label-text">Password</span>
               </label>
-              <input type={showPas ? 'text' : "password"} placeholder="password" {...register("password",
-                {
+              <input type={showPas ? 'text' : "password"} 
+              placeholder="password" {...register("password",
+             
+             //  value: /^[A-Za-z]+$/i,
+               
+               {
                   required: 'Password min-6 characters',
-                  pattern: { value: /^[A-Za-z]+$/i, message: ' Must have an Uppercase & Lowercase letter  in the password' },
+                  pattern: {  message: ' Must have an Uppercase & Lowercase letter  in the password' },
                   minLength: {
                     value: 6,
                     message: "Password must be at least 6 characters long.",

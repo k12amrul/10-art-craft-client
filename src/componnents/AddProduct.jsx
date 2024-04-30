@@ -36,19 +36,7 @@ const AddProduct = () => {
 
         console.log(data)
 
-        // fetch('http://localhost:5000/addCraftItem',{
-        //     method : "POST",
-        //     headers: {
-        //         // "Content-Type": "application/json",
-        //         "content-type": "application/json",
-        //     },
-        //     body: JSON.stringify(data),
-
-        // } )
-        // .then( res => res.json())
-        // .then( data => {
-        //     console.log( data )
-        // } )
+       
 
         fetch('http://localhost:5000/addCraftItem', {
             method: "POST",
