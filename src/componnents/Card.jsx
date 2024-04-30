@@ -37,11 +37,10 @@ const Card = ({data}) => {
 <div className='flex  items-center '>
   <NavLink to={`/artDetails/${_id}`} className='flex items-center' >
 
-    <button className='btn' >
+    {/* <button className='btn' >
       Details
       <BsArrowRight />
-    </button>
-    {/* <h4 className=' ml-2'> Details</h4> */}
+    </button> */}
   </NavLink>
 </div>
 
